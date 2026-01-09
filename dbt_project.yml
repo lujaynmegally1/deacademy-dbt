@@ -6,6 +6,17 @@ name: 'lujayn_dbt_workshop'
 version: '1.0.0'
 config-version: 2
 
+profile: 'default'
+
+Vars: 
+   wrk_schema: BRONZE
+   file_format_json: MYDB.BRONZE.MY_CSV_FORMAT
+   purge_status: FALSE
+   stage_name: MYDB.BRONZE.MY_S3_STAGE
+   rawhist_db: MYDB 
+ 
+
+
 models:
   lujayn_dbt_workshop:
       silver:
