@@ -7,8 +7,7 @@ version: '1.0.0'
 config-version: 2
 
 profile: 'default'
-
-Vars: 
+vars: 
    wrk_schema: BRONZE
    file_format_json: MYDB.BRONZE.MY_CSV_FORMAT
    purge_status: FALSE
@@ -21,7 +20,7 @@ models:
   lujayn_dbt_workshop:
       silver:
           schema: silver
-          materialized: table
+          +materialized: table
       gold:
           schema: gold
-          materialized: view
+          +materialized: view
