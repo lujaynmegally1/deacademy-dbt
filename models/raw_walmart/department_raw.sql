@@ -1,7 +1,7 @@
 {{ config(
     materialized = 'table',
     database = 'WALMART',
-    schema = 'PUBLIC',
+    schema = 'RAW',
     alias = 'department_raw'
 ) }}
 

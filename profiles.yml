@@ -1,0 +1,9 @@
+lujayn_walmart:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      database: WALMART
+      warehouse: COMPUTE_WH
+      schema: RAW      
